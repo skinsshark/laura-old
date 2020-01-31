@@ -1,0 +1,105 @@
+@font-face {
+	font-family: 'Standard';
+	src: url("./fonts/Standard.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: 'Bold';
+	src: url("./fonts/Bold.ttf") format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+	display: flex;
+	justify-content: center;
+}
+
+body {
+	width: 85vw;
+  font-size: 1.8rem;
+  background-color: #000;
+  color: #fff;
+  margin: 70px 0 0;
+  padding: 30px 0 50px 0;
+  font-family: 'Standard', sans-serif;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h1 {
+	font-family: 'Bold', sans-serif;
+	text-transform: uppercase;
+  font-weight: bold;
+	display: inline-block;
+}
+
+h1:hover {
+	font-style: italic;
+	cursor: crosshair;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media only screen and (max-width: 992px) {
+	header {
+		display: inline-block;
+	}
+
+	button {
+		margin: 20px 0 50px;
+	}
+}
+
+a, a:focus, a:active {
+	outline: none;
+	background: none;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 8px;
+	font-size: 1.25rem;
+	padding: 5px 20px;
+	text-decoration: none;
+	cursor: crosshair;
+}
+
+a span {
+	letter-spacing: 10px;
+	transition: 0.8s linear all;
+}
+
+a:hover span {
+	letter-spacing: 0px;
+}
+
+/* @media only screen and (max-width: 992px) {
+	a span, a:hover span {
+		letter-spacing: 0px;
+	}
+} */
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+ul li {
+	display: inline;
+	font-size: 1rem;
+}
+
+ul li::before {
+	content: '\2726  ';
+}
+
+ul li:last-child::after {
+	content: '  \2726';
+}
