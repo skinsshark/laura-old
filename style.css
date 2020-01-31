@@ -18,6 +18,7 @@ html {
 }
 
 body {
+	cursor: default;
 	width: 85vw;
   font-size: 1.8rem;
   background-color: #000;
@@ -47,6 +48,23 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	animation: slide-in 1s ease-in-out;
+}
+
+@keyframes slide-in {
+	0% {
+		margin-top: 70px;
+		opacity: 0;
+	}
+
+	70% {
+		margin-top: -2px;
+	}
+
+	100% {
+		margin-top: 0;
+		opacity: 1;
+	}
 }
 
 @media only screen and (max-width: 992px) {
@@ -73,10 +91,10 @@ a, a:focus, a:active {
 
 a span {
 	letter-spacing: 10px;
-	transition: 0.8s linear all;
 }
 
 a:hover span {
+	transition: 0.8s linear all;
 	letter-spacing: 0px;
 }
 
@@ -85,6 +103,26 @@ a:hover span {
 		letter-spacing: 0px;
 	}
 } */
+
+section {
+	animation: slide-in-later 1s ease-in-out;
+}
+
+@keyframes slide-in-later {
+	0%, 10% {
+		margin-top: 30px;
+		opacity: 0;
+	}
+
+	70% {
+		margin-top: -2px;
+	}
+
+	100% {
+		margin-top: 0;
+		opacity: 1;
+	}
+}
 
 ul {
 	padding: 0;
