@@ -49,6 +49,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	animation: slide-in 1s ease-in-out;
+	-webkit-animation: slide-in 1s ease-in-out;
 }
 
 @keyframes slide-in {
@@ -96,6 +97,7 @@ a:hover span {
 
 section {
 	animation: slide-in-later 1s ease-in-out;
+	-webkit-animation: slide-in-later 1s ease-in-out;
 }
 
 @keyframes slide-in-later {
